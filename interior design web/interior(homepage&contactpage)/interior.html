@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZSPACE</title>
+    <link rel="icon" href="./imgs/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="./interior.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">
+            <img src="./imgs/logo.png">ZSPACE
+        </a>
+
+        <div class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__items">
+                    <a href="#home" class="nav__link active-link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>HOME</span></a>
+                </li>
+                <li class="nav__items">
+                    <a href="#about" class="nav__link">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>ABOUT US</span></a>
+                </li>
+                <li class="nav__items">
+                    <a href="#gallery" class="nav__link">
+                    <i class="fa-regular fa-images"></i>
+                    <span>GALLERY</span></a>
+                </li>
+                <li class="nav__items">
+                    <a href="#project" class="nav__link">
+                        <i class="fa-solid fa-gear"></i>
+                    <span>SERVICES</span></a>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="nav__actions">
+            <i class="fa-solid fa-magnifying-glass search-button" id="search-button"></i>
+
+            <i class="fa-regular fa-user login-button" id="login-button"></i>
+
+            <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+        </div>
+    </nav>
+   </header>
+
+   <div class="search" id="search-content">
+    <form action="" class="search__form">
+        <i class="fa-solid fa-magnifying-glass search__icon"></i>
+        <input type="search" placeholder="What designs do you prefer?" class="search__input">
+    </form>
+
+    <i class="fa-solid fa-xmark search__close" id="search__close"></i>
+   </div>
+
+   <div class="login grid" id="login-content">
+    <form action="" class="login__form grid">
+        <h3 class="login__title">Log in</h3>
+
+        <div class="login__group grid">
+            <div>
+                <label for="login-email" class="login__label">Email</label>
+                <input type="email" placeholder="Write your email" id="login-email" class="login__input">
+            </div>
+
+            <div>
+                <label for="login-pass" class="login__label">Password</label>
+                <input type="password" placeholder="Enter your password" id="login-pass" class="login__input">
+            </div>
+
+            <div>
+                <span class="login__signup">
+                    You don't have an account? <a href="#">Sign up</a>
+                </span>
+
+                <a href="#" class="login__forget">
+                    You forget your password
+                </a>
+                <button type="submit" href="#" class="login__button">
+                    Log in
+                </button>
+            </div>
+        </div>
+    </form>
+    <i class="fa-solid fa-xmark login__close" id="login__close"></i>
+   </div>
+   <main class="main">
+    <section class="home section" id="home">
+        <div class="home-container container grid">
+            <div class="home-data">
+                <h1 class="home__title">Crafting your unique interior designs</h1>
+            </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./imgs/monday.png" alt="img" class="image__items"></div>
+              <div class="swiper-slide"><img src="./imgs/google.png" alt="img" class="image__items"></div>
+              <div class="swiper-slide"><img src="./imgs/trivago.png" alt="img" class="image__items"></div>
+              <div class="swiper-slide"><img src="./imgs/livspace.png" alt="img" class="image__items"></div>
+              <div class="swiper-slide"><img src="./imgs/adidas.png" alt="img" class="image__items"></div>
+              <div class="swiper-slide"><img src="./imgs/the karighars.png" alt="img" class="image__items"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>   
+    </section>
+
+    <section class="about" id="about">
+        <div class="about__container container grid">
+            <div>
+                <h3 class="about__title">ABOUT US</h3>
+                <h2 class="about__subtitle">Crafting inspired<br>  spaces for over <br> 15 years</h2>
+                <p class="about__description">
+                    Established with a passion for creativity and a commitment<br>
+                    to excellence. ZSpace has been transforming spaces since<br> 
+                    2009. With a keen eye of detail and a focus on innovation,<br> 
+                    we strive to exceed our clients' expectations with every<br> 
+                    project we undertake.
+                </p>
+                <button class="about__button">Read more</button>
+        </div>
+                   <div class="about__images">
+                    <img src="./imgs/drawing room.jpeg" alt="img" class="image__items1 ">
+                    <img src="./imgs/cabinet.jpeg" alt="img" class="image__items2 ">
+                    <img src="./imgs/kitchen.jpeg" alt="img" class="image__items3 ">
+                   </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="gallery__container container grid">
+           <h3 class="gallery__title">CATEGORY</h3>
+           <h2 class="gallery__subtitle">Discover your signature style</h2>
+           <p class="gallery__description">At ZSpace, we pride on our versality and ability to bring <br>
+            various design styles to life</hp>
+
+            <div class="gallery__content">
+              
+                <article class="interior__styles1">
+                    <img src="./imgs/scanvandian livingroom.jpeg" alt="img" class="image__item1">
+                    <h2 class="style__name">Scandinavian Style</h2>
+                    <div class="style__description">
+                        <span>Clean lines, natural light, and a focus on functionality create<br>
+                        spaces that are both inviting and effortlessly stylish.
+                        </span>
+                </article>
+                <article class="interior__styles2">
+                    <img src="./imgs/japanese style.jpeg" alt="img" class="image__item2">
+                    <h2 class="style__name">Japanese Style</h2>
+                    <div class="style__description">
+                        <span>From tatami mat flooring to shoji screens, our Japanese-inspired spaces embody
+                            harmony, simplicity, and a deep connection to nature.
+                        </span>
+                    </div>
+                </article>
+                <article class="interior__styles3">
+                    <img src="./imgs/industrial style.jpeg" alt="img" class="image__item3">
+                    <h2 class="style__name">Industrial Style</h2>
+                    <div class="style__description">
+                        <span>Uncover urban charm, our industrial-inspired designs feature exposed brick, metal
+                            Accents, and Raw Materials for Character-Filled Spaces.
+                        </span>
+                    </div>
+                </article>
+                <article class="interior__styles4">
+                    <img src="./imgs/Minimalist livingRoom Designs.jpeg" alt="img" class="image__item4">
+                    <h2 class="style__name">Minimalist Style</h2>
+                    <div class="style__description">
+                        <span>Experience the Beauty of Minimalism Clean Lines, Neutral Tones,
+                            and Functional Design Bring Calm and Clarity to Your Space.
+                        </span>
+                    </div>
+                </article>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project" id="project">
+        <div class="project__container container grid">
+            <div class="project__details">
+                <div>
+                    <h3 class="project__title">OUR PROJECTS</h3>
+                    <h2 class="project__subtitle">explore our design<br> showcase</h2>
+                </div>
+                <div>
+                    <p class="description">
+                        From modern minimalism to timeless elegance our portfolio
+                        showcase a spectrum of design styles and inspirations. 
+                        Discover how we turn visions into captivating realities,
+                        one space at a time.
+                    </p>
+                </div>
+            </div>
+            <div class="project__card">
+                    <div class="box-area">
+                        <div class="box1 box">
+                            <img src="./imgs/img1.jpeg" alt="img" class="image__1">
+                            <div class="overlay">
+                                <h4>Sophistication and comfort design - Architect K atelier </h4>
+                                <a href="./project1/project1.html">Read more</a>
+                            </div>
+                        </div>
+                        <div class="box2 box">
+                            <img src="./imgs/img2.jpeg" alt="img" class="image__2">
+                            <div class="overlay">
+                                <h4>Japanadi design with a traditional touch - Studio Skapa Architect </h4>
+                                <a href="./project2/project2.html">Read more</a>
+                            </div>
+                        </div>
+                        <div class="box3 box">
+                            <img src="./imgs/img3.jpeg" alt="img" class="image__3">
+                            <div class="overlay">
+                                <h4>A classiscal aesthetic in a modern workspace - Interactive Design Studio </h4>
+                                <a href="./project3/project3.html">Read more</a>
+                            </div>
+                        </div>
+                        <div class="box4 box">
+                            <img src="./imgs/img4.jpeg" alt="img" class="image__4">
+                            <div class="overlay">
+                                <h4>Roof top restaurant with mughal and french architecture - 42MM architecture</h4>
+                                <a href="./project4/project4.html">Read more</a>
+                            </div>
+                        </div>
+                        <div class="box5 box">
+                            <img src="./imgs/img5.jpeg" alt="img" class="image__5">
+                            <div class="overlay">
+                                <h4>This design promotes peace and tranquility with earthly tones - the Architect's diary</h4>
+                                <a href="./project5/project5.html">Read more</a>
+                            </div>
+                        </div>
+                        <div class="box6 box">
+                            <img src="./imgs/img6.jpeg" alt="img" class="image__6">
+                            <div class="overlay">
+                                <h4>A subtle blend of clean aesthetics and functionality - Compartment S4</h4>
+                                <a href="./project6/project6.html">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <button class="project-btn">More Projects</button>
+        </div>
+    </section>
+
+    <div class="testimonial" id="testimonial">
+      <div class="testimonials-container container grid">
+            <div class="slide-container active">
+             <div class="slide">
+                <div class="image">
+                    <img src="./imgs/image_1.jpg" alt="img">
+                </div>
+                <div class="content">
+                    <h3 class="text1">testimonial</h3>
+                    <h2 class="text2">Transforming our dream<br> into reality</h2>
+                    <p class="testimonial-description">
+                        “We are soooo happy with the outcome. We had a great experience working with all Upstairs team, they were always attentive, kind and super professional, the communication was easy even though we do not live in the country.
+                        We had a great time decorating our home along with them. We highly recommend Upstairs interiors, they are the best!!!<span> - Khushi</span>
+                    </p>
+
+                </div>
+             </div>
+            </div>
+            <div class="slide-container">
+             <div class="slide">
+                <div class="image">
+                    <img src="./imgs/image_2.jpeg" alt="img">
+                </div>
+                <div class="content">
+                    <h3 class="text1">testimonial</h3>
+                    <h2 class="text2">Cube house is a bright and cozy home for the client and his family</h2>
+                    <p class="testimonial-description">
+                        The designers at Upstairs hepled us in making the right choices with colours and using the
+                        available space. Overall, Upstairs delivered exactly what we hoped for.
+                        <span> - Varuni Joshi</span></p>
+                </div>
+             </div>
+            </div>
+            <div class="slide-container">
+             <div class="slide">
+                <div class="image">
+                    <img src="./imgs/image_3.jpeg" alt="img">
+                </div>
+                <div class="content">
+                    <h3 class="text1">testimonial</h3>
+                    <h2 class="text2">This Sunlit and breezy Abode in beverly Park sets the Tones of Warmth</h2>
+                    <p class="testimonial-description">
+                        This design made by Upstairs sets the tone of warmth,comfort and dynamism.
+                        It seems as  Interwoven with nuances of vintage and international vignettes carving a riveting narrative <span> - Simran Singh</span>
+    
+                    </p>
+                </div>
+                
+             </div>
+            </div>
+            <div class="slide-container">
+             <div class="slide">
+                <div class="image">
+                    <img src="./imgs/image_4.jpeg" alt="img">
+                </div>
+                <div class="content">
+                    <h3 class="text1">testimonial</h3>
+                    <h2 class="text2">An immersive experience in contemporary elegance</h2>
+                    <p class="testimonial-description">
+                        From the captivating wallpaper to the intricate wainscoting, this project of Upstairs promises an immersive
+                        experience in contemporary elegance and spiritual tranquility  for us.<span> - Shivali Pradhan</span>
+                    </p>
+                </div>
+                
+             </div>
+            </div>
+            <div class="slide-btn">
+                <i class="fa-solid fa-angle-left" id="prev" onclick="prev()"></i>
+                <i class="fa-solid fa-angle-right" id="next" onclick="next()"></i>
+            </div>
+         
+        
+      </div>
+    </div>
+    <div class="services" id="services">
+        <div class="services-container container grid">
+            <div class="sevices-data">
+                <h1 class="services__title">create your dream space with our interior design experts</h1>
+                <a href="./contact.html"><button class="contact-btn">Contact Us</button></a>
+            </div>
+        </div>
+    </div>
+    
+   </main>
+   <footer class="footer">
+    <div class="footer__container container grid">
+       <div class="footer__content">
+        <div>
+          <a href="#" class="footer__logo">
+            <img src="./imgs/logo.png" alt="img">ZSPACE
+          </a>
+          <p class="footer__description">Levate Your Space with Our Interior Design Services.
+          </p>
+          <div class="footer__data grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="#" class="footer__link"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link"><i class="fa-brands fa-instagram"></i> </a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+            </ul>
+           </div>
+        </div>
+          <div>
+            <ul class="footer__items">
+                <li>
+                    <a href="#home" class="footer__item">HOME</a>
+                </li>
+                <li>
+                    <a href="#about" class="footer__item">ABOUT US </a>
+                </li>
+                <li>
+                    <a href="#gallery" class="footer__item">GALLERY</a>
+                </li>
+                <li>
+                    <a href="#project" class="footer__item">SERVICES</a>
+                </li>
+            </ul>
+           </div>
+       </div>
+       <div class="footer__thumb"></div>
+       <span class="footer__copy">
+        <div class="copyright">
+            <p class="copyright-text">ZSpace &copy; 2024 All Rights Reserved.
+            </p>
+        </div>
+        <div class="terms-condition">
+            <a class="terms" href="#"> Term & condition </a>
+            <a class="terms" href="#"> Privacy Policy </a>
+            <a class="terms" href="#"> Cookies </a>
+        </div>
+    </span>
+    </div>
+   </footer>
+   <a href="#" class="scrollup" id="scroll-up">
+    <i class="fa-solid fa-arrow-up"></i>
+   </a>
+   
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="./interior.js"></script>
+</body>
+</html>
